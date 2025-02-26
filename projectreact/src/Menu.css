@@ -1,0 +1,22 @@
+body {
+    background-color: #f4f7f6;
+    
+  }
+  
+  h1 {
+    color: #4CAF50;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  .container {
+    max-width: 1200px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  

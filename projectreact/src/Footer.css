@@ -1,0 +1,159 @@
+/* Footer Styling */
+.footer {
+    margin-top: 50px;
+    background-color: #d3ebc8;
+    padding: 50px 20px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Footer Content */
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    color: #333;
+  }
+  
+  /* Company Info Section */
+  .company-info {
+    flex: 1;
+    max-width: 400px;
+  }
+  
+  .footer-logo {
+    width: 120px;
+    margin-bottom: 20px;
+  }
+  
+  .about-text,
+  .mission-text,
+  .contact-text {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+  
+  .mission-text strong,
+  .contact-text strong {
+    color: #228B22; /* Green color */
+  }
+  
+  /* Branches Section */
+  .branches {
+    flex: 2;
+    max-width: 700px;
+  }
+  
+  .branches h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #228B22; /* Green color */
+  }
+  
+  .branches ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .branch-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  
+  .branch-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+  }
+  
+  .branch-info {
+    flex: 1;
+  }
+  
+  .branch-info h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #228B22;
+  }
+  
+  .branch-info p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .branch-info a {
+    color: #228B22;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .branch-info a:hover {
+    color: #16A085; /* Darker green on hover */
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    font-size: 14px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .company-info {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  
+    .branches {
+      width: 100%;
+    }
+  
+    .branch-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .branch-image {
+      margin-bottom: 10px;
+    }
+  
+    .footer-logo {
+      margin: 0 auto 20px auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .branch-item {
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+  
+    .branch-info h4 {
+      font-size: 16px;
+    }
+  
+    .branch-info p {
+      font-size: 12px;
+    }
+  }
+  

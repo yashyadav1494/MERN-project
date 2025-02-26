@@ -1,0 +1,56 @@
+/* OrderForm.css */
+.order-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .order-form h1 {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 2rem;
+  }
+  
+  .order-form .form-group input,
+  .order-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  
+  .order-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .product-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .product-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .product-item div {
+    flex-grow: 1;
+  }
+  
+  .order-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .order-form button:hover {
+    background-color: #45a049;
+  }
+  

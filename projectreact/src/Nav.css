@@ -1,0 +1,135 @@
+/* Custom Navbar Styling */
+.navbar-custom {
+  background-color: white !important; /* White background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a soft shadow for a modern look */
+  position: sticky; /* Make navbar sticky at the top */
+  top: 0; /* Stick it at the top */
+  z-index: 999; /* Ensure it stays above other content */
+}
+
+
+.navbar-custom .nav-link {
+  color: #333 !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px 20px;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #28a745 !important; /* Hover effect with green color */
+}
+
+.navbar-custom .navbar-toggler {
+  border-color: #28a745 !important;
+}
+
+.navbar-custom .navbar-toggler-icon {
+  background-color: #28a745 !important;
+}
+
+.search-form .search-btn {
+  margin-left: 10px;
+  height: 100%;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.search-form .search-btn:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 991px) {
+  .search-form {
+    display: none; /* Hide search bar on small screens */
+  }
+}
+
+/* General navbar styles */
+.navbar-custom {
+  background-color: #28a745; /* Green background */
+  padding: 10px 20px; /* Adjust padding */
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: black !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: green !important;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.navbar-custom .navbar-nav .nav-dropdown .dropdown-toggle {
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 15px;
+}
+
+.navbar-custom .navbar-nav .nav-dropdown .dropdown-menu {
+  background-color: #28a745;
+  border: none;
+}
+
+.navbar-custom .navbar-nav .nav-dropdown .dropdown-item {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.navbar-custom .navbar-nav .nav-dropdown .dropdown-item:hover {
+  color: #333 !important;
+  background-color: #fff;
+}
+
+.navbar-custom .company-title {
+  color: green;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.navbar-custom .company-title sup {
+  font-size: 14px;
+}
+
+.navbar-custom .navbar-toggler-icon {
+  background-color: #fff;
+}
+
+/* Ensure logo is responsive */
+.navbar-custom img {
+  height: 50px;
+}
+
+body {
+  padding-top: 70px; /* Add padding to the top to prevent content being hidden behind navbar */
+}
+
+@media (max-width: 992px) {
+  .navbar-custom .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-custom .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+
+  .navbar-custom .company-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-custom .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+}
+
+.bold-title {
+  font-weight: bold;
+}

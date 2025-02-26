@@ -1,0 +1,394 @@
+
+.sidebar-container {
+  /* width: 250px; */
+  width:20%;
+  height: 100vh; 
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  display: flex;
+  /* position: absolute; */
+  /* float: left; */
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display:flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.company-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.sidebar-Links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-Links li {
+  margin: 15px 0;
+}
+
+.sidebar-Links li {
+  text-decoration: none;
+  color: gray;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.sidebar-Links li:hover {
+  background-color: rgb(13, 226, 24);
+}
+
+.sign-up-button {
+  text-decoration: none;
+  text-align: center;
+  background-color: lightblue;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sign-up-button:hover {
+  background-color: #e67e22;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.social-icon {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.social-icon:hover {
+  color: #ccc;
+}
+
+sup {
+  vertical-align: super;
+  font-size: small;
+}
+
+hr{
+  border: 1px solid black;
+  width: 100%;
+
+}
+
+.b{
+  font-size: 18px;
+}
+
+/* Add custom scroll bar */
+.sidebar-container::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.sidebar-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.sidebar-container::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.mm{
+  margin-left: 0%;
+  width: 80%;
+  height:633px;
+  position: relative;
+  /* display: flex;
+  float: right; */
+  
+
+  text-align: center;
+}
+.vv{
+  color:orange;
+}
+.suraj{
+  display: flex;
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+/* General container for the entire page */
+.organics-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+
+/* Main content section */
+.main-content {
+  flex-grow: 1;
+  padding: 40px;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* Hero section */
+.hero-section {
+  background-color: white;
+  border-radius: 8px;
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-title {
+  font-size: 3rem;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 2.2rem;
+  color: #388e3c;
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.hero-quote {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.author-info {
+  font-size: 1.1rem;
+  color: magenta;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .navbar-links ul {
+    flex-direction: column;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.8rem;
+  }
+
+  .hero-quote {
+    font-size: 1.1rem;
+  }
+
+  .author-info {
+    font-size: 1rem;
+  }
+
+  .sign-up-button {
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .hero-quote {
+    font-size: 1rem;
+  }
+
+  .author-info {
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .company-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-links .nav-link {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .sign-up-button {
+    padding: 8px 12px;
+  }
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2e7d32;
+  padding: 20px;
+  color: white;
+  position: relative;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  margin-right: 10px;
+}
+
+.company-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.navbar-links {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.navbar-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.navbar-links .nav-link {
+  text-decoration: none;
+  color: white;
+  padding: 14px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.navbar-links .nav-link:hover {
+  background-color: #388e3c;
+  border-radius: 5px;
+}
+
+.sign-up-button {
+  background-color: #f44336;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.sign-up-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Toggle button for responsive design */
+.toggle-button {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.toggle-button .bar {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    width: 100%;
+    text-align: left;
+    background-color: #2e7d32;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 20px;
+  }
+
+  .navbar-links.open {
+    display: block;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  .navbar-links .nav-link {
+    padding: 10px 20px;
+    width: 100%;
+    text-align: left;
+    border-top: 1px solid #ddd;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+}

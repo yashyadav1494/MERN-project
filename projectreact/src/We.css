@@ -1,0 +1,135 @@
+/* .gary{
+    background-color:darksalmon;
+}
+.h{
+    color:black;
+    text-align: start;
+    font-style:italic;
+}
+.z{
+    color:green;
+}
+.para{
+    font-size: 20px;
+} */
+
+/* General Styles */
+.container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .pp {
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    padding: 20px;
+  }
+  
+  .h {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .z {
+    font-size: 1.3rem;
+    color: #333;
+  }
+  
+  .para {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  /* Card Styles */
+  .card {
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-img-top {
+    border-radius: 10px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .card a:hover {
+    color: #0056b3;
+  }
+  
+  /* Grid Layout for Supporters */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .col-3 {
+    flex: 1 1 22%; /* Default 4 cards per row */
+    padding: 10px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .col-3 {
+      flex: 1 1 45%; /* On medium screens (tablets), 2 cards per row */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .col-3 {
+      flex: 1 1 100%; /* On small screens (phones), 1 card per row */
+      margin-bottom: 20px;
+    }
+  
+    .pp {
+      font-size: 2.5rem;
+      padding: 15px;
+    }
+  
+    .h {
+      font-size: 2rem;
+    }
+  
+    .para {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .pp {
+      font-size: 2rem;
+      padding: 10px;
+    }
+  
+    .h {
+      font-size: 1.8rem;
+    }
+  
+    .para {
+      font-size: 0.9rem;
+    }
+  }
+  

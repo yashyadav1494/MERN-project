@@ -1,0 +1,38 @@
+/* Custom styles for the sliding side panel */
+.side-panel {
+  position: fixed;
+  top: 0;
+  right: -350px; /* Initially hidden off-screen */
+  width: 350px;
+  height: 100%;
+  background-color: #f8f9fa;
+  padding: 20px;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  transition: transform 0.5s ease;
+  transform: translateX(100%);
+}
+
+/* Add class for when the side panel is open */
+.side-panel.open {
+  transform: translateX(0); /* Slide in the panel */
+}
+
+.side-panel h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.side-panel ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.side-panel button {
+  margin-top: 10px;
+}
+
+/* Optionally, style for the button that toggles the panel */
+button {
+  margin-top: 20px;
+}

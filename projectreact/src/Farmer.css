@@ -1,0 +1,45 @@
+/* Custom styles for Farmers Component */
+.farmer-card {
+    border: 2px solid #28a745;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .farmer-card img {
+    border-radius: 50%;
+    object-fit: cover;
+    max-height: 200px;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  
+  .farmer-card .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .farmer-card .card-subtitle {
+    font-size: 1.2rem;
+    color: #6c757d;
+  }
+  
+  .farmer-card .card-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .farmer-card .btn-primary {
+    background-color: #28a745;
+    border: none;
+  }
+  
+  .modal-body ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .modal-body ul li {
+    padding: 5px 0;
+    font-size: 1rem;
+  }
+  

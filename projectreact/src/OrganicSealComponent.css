@@ -1,0 +1,66 @@
+.organic-seal-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .subheading {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .seal-description {
+    text-align: center;
+  }
+  
+  .organic-seal-image {
+    width: 200px;
+    margin-top: 20px;
+  }
+  
+  .more-info-section {
+    margin-top: 20px;
+  }
+  
+  .more-info-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .more-info-button:hover {
+    background-color: #45a049;
+  }
+  
+  .organic-product-section {
+    margin-top: 30px;
+  }
+  
+  .product-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .product-card {
+    text-align: center;
+  }
+  
+  .product-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .product-card p {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  

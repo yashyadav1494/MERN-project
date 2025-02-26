@@ -1,0 +1,600 @@
+/* Sidebar Styling */
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 350px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Transparent dark background */
+    color: white;
+    transition: right 0.3s ease;
+    box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    overflow: hidden; /* Hide overflow to prevent sidebar from overflowing when the cart is opened */
+  }
+  
+  .cart-sidebar.open {
+    right: 0;
+  }
+  
+  .cart-container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%; /* Ensure the container takes full height */
+  }
+  
+  /* Cart Content (Scrollable Area) */
+  .cart-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-y: auto; /* Add vertical scrolling */
+    max-height: 70%; /* Limit the height of the content area for scrolling */
+    padding-right: 10px; /* Ensure there's space on the right for scrollbars */
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .cart-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .cart-item img {
+    max-width: 80px;
+    max-height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+  }
+  
+  .item-details {
+    flex-grow: 1;
+    text-align: left;
+  }
+  
+  .item-details h4 {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+  
+  .item-details p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .item-details button {
+    background-color: #ff3b3b;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .item-details button:hover {
+    background-color: #e63636;
+  }
+  
+  /* Scrollbar Customization */
+  .cart-content::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .cart-content::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+  
+  .cart-content::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+  .cart-actions {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .cart-actions .total {
+    margin-bottom: 20px;
+    color: #303330;
+  }
+  
+  .cart-actions button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .cart-actions button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Button Colors */
+  .btn-success {
+    background-color: #4CAF50;
+  }
+  
+  .btn-primary {
+    background-color: #2196F3;
+  }
+  
+  .btn-warning {
+    background-color: #FF9800;
+  }
+  
+  /* Empty Cart Text */
+  .empty-cart {
+    font-size: 18px;
+    color: #bbb;
+    text-align: center;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 1024px) {
+    /* Tablet */
+    .cart-sidebar {
+      width: 300px;
+    }
+  
+    .cart-toggle-btn {
+      bottom: 15px;
+      right: 15px;
+      padding: 12px;
+    }
+  
+    .cart-content {
+      max-height: 60%;
+    }
+  
+    .cart-item img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .item-details h4 {
+      font-size: 16px;
+    }
+  
+    .item-details p {
+      font-size: 14px;
+    }
+  
+    .cart-actions button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Mobile */
+    .cart-sidebar {
+      width: 100%;
+      max-width: 320px; /* Adjust to fit screen */
+    }
+  
+    .cart-toggle-btn {
+      bottom: 10px;
+      right: 10px;
+      padding: 12px;
+    }
+  
+    .cart-container {
+      padding: 20px;
+    }
+  
+    .cart-content {
+      max-height: 50%; /* Limit height further for mobile */
+    }
+  
+    .cart-item img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .item-details h4 {
+      font-size: 14px;
+    }
+  
+    .item-details p {
+      font-size: 12px;
+    }
+  
+    .cart-actions button {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  
+    .cart-actions .total {
+      font-size: 16px;
+      /* color: #ff3b3b; */
+    }
+  
+    .empty-cart {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Small Mobile */
+    .cart-sidebar {
+      width: 100%;
+      max-width: 280px; /* Make it smaller for very small screens */
+    }
+  
+    .cart-toggle-btn {
+      bottom: 8px;
+      right: 8px;
+      padding: 10px;
+    }
+  
+    .cart-container {
+      padding: 15px;
+    }
+  
+    .cart-content {
+      max-height: 45%; /* Further restrict content height for smaller screens */
+    }
+  
+    .cart-item img {
+      width: 45px;
+      height: 45px;
+    }
+  
+    .item-details h4 {
+      font-size: 12px;
+    }
+  
+    .item-details p {
+      font-size: 10px;
+    }
+  
+    .cart-actions button {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  
+    .cart-actions .total {
+      font-size: 14px;
+      /* color: #ff3b3b; */
+    }
+  
+    .empty-cart {
+      font-size: 14px;
+    }
+  }
+
+  
+
+/* Cart Toggle Button Styling */
+.cart-toggle-btn {
+  position: fixed; /* Keep the button fixed */
+  bottom: 20px; /* Position from the bottom */
+  left: 20px; /* Shift to the left side of the screen */
+  background-color: #66bb6a; /* Green background (can change based on theme) */
+  color: #fff; /* White text color */
+  padding: 15px 20px;
+  border: none;
+  border-radius: 50px; /* Circular button */
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it's always on top */
+}
+
+.cart-toggle-btn i {
+  margin-right: 10px;
+  font-size: 22px; /* Icon size */
+}
+
+.cart-toggle-btn span {
+  font-size: 16px;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1; /* Text visible by default */
+}
+
+.cart-toggle-btn.open {
+  background-color: #ff7043; /* Change color when the cart is open */
+  transform: rotate(180deg); /* Slight rotation for a fun effect */
+}
+
+.cart-toggle-btn.open i {
+  transform: rotate(180deg); /* Rotate the icon when open */
+}
+
+.cart-toggle-btn.open span {
+  opacity: 0; /* Hide text when the cart is open */
+}
+
+/* Hover effect */
+.cart-toggle-btn:hover {
+  background-color: #5b9e56; /* Darker green on hover */
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* Media Query for Mobile/Tablet */
+@media (max-width: 768px) {
+  .cart-toggle-btn {
+    padding: 12px 18px; /* Slightly smaller padding */
+    font-size: 16px; /* Smaller font size on mobile */
+  }
+
+  .cart-toggle-btn i {
+    font-size: 20px; /* Slightly smaller icon */
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-toggle-btn {
+    padding: 10px 15px; /* Further reduced padding */
+    font-size: 14px; /* Smaller text on smaller screens */
+  }
+
+  .cart-toggle-btn i {
+    font-size: 18px; /* Icon size for smaller screens */
+  }
+}
+
+
+
+
+/* Cart Toggle Button Styling */
+.cart-toggle-btn {
+  position: relative;
+  bottom: 20px;
+  left: 20px;
+  background-color: #66bb6a;
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.cart-toggle-btn i {
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+.cart-toggle-btn span {
+  font-size: 16px;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.cart-toggle-btn.open {
+  background-color: #ff7043;
+  transform: rotate(180deg);
+}
+
+.cart-toggle-btn.open i {
+  transform: rotate(180deg);
+}
+
+.cart-toggle-btn.open span {
+  opacity: 0;
+}
+
+.cart-toggle-btn:hover {
+  background-color: #5b9e56;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Cart Sidebar */
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  border-left: 2px solid #ccc;
+  padding: 20px;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.cart-sidebar.open {
+  transform: translateX(0);
+}
+
+.cart-container {
+  padding: 20px;
+}
+
+.cart-content {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.cart-actions {
+  margin-top: 20px;
+}
+
+.cart-actions button {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.empty-cart {
+  text-align: center;
+  color: #999;
+  font-size: 18px;
+}
+
+
+
+/* Cart Toggle Button Styling */
+.cart-toggle-container {
+  position: relative; /* Make this relative to the product container */
+  padding: 20px;
+}
+
+.cart-toggle-btn {
+  position: absolute;
+  bottom: 2580px; /* Fix at the bottom of the product container */
+  left: 0;
+  background-color: #66bb6a;
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.cart-toggle-btn i {
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+.cart-toggle-btn span {
+  font-size: 16px;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.cart-toggle-btn.open {
+  background-color: #ff7043;
+  transform: rotate(180deg);
+}
+
+.cart-toggle-btn.open i {
+  transform: rotate(180deg);
+}
+
+.cart-toggle-btn.open span {
+  opacity: 0;
+}
+
+.cart-toggle-btn:hover {
+  background-color: #5b9e56;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Cart Sidebar */
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  border-left: 2px solid #ccc;
+  padding: 20px;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.cart-sidebar.open {
+  transform: translateX(0);
+}
+
+.cart-container {
+  padding: 20px;
+}
+
+.cart-content {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.cart-actions {
+  margin-top: 20px;
+}
+
+.cart-actions button {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.empty-cart {
+  text-align: center;
+  color: #999;
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-container button {
+  padding: 5px 10px;
+}
+
+.quantity-container input {
+  width: 50px;
+  text-align: center;
+}

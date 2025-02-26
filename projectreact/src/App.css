@@ -1,0 +1,149 @@
+/* Carousel.css */
+
+/* .full-width-carousel {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.full-width-slide {
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-width-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.slide-image {
+  width: 100%;
+  height: auto;
+} */
+
+/* Carousel.css */
+
+/* Container for the entire carousel */
+.full-width-carousel {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Styles for each slide */
+.full-width-slide {
+  width: 100vw;
+  height: 70vh; /* Adjusted height for better visual balance */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Image styling */
+.full-width-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Adding a subtle hover effect on images for a dynamic feel */
+.full-width-slide:hover img {
+  transform: scale(1.1);
+}
+
+/* Image styling for responsiveness */
+.slide-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Smooth rounded corners */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Transition effect for smooth image zoom */
+.slide-image:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* For Mobile/Tablet - Responsiveness */
+@media (max-width: 768px) {
+  .full-width-slide {
+    height: 50vh; /* Reduced height on smaller screens */
+  }
+
+  .slide-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (max-width: 480px) {
+  .full-width-slide {
+    height: 40vh; /* Further reduced height for mobile screens */
+  }
+
+  .slide-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+
+
+/* General Container */
+.order-section-container {
+  background: linear-gradient(135deg, #ff9800, #ff5722); /* Gradient Background */
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+.order-section-title {
+  font-size: 48px;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Adding shadow for text */
+  line-height: 1.4;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .order-section-title {
+    font-size: 36px; /* Adjust font size on smaller screens */
+  }
+}
+
+/* Responsive Design for Small Mobile */
+@media (max-width: 480px) {
+  .order-section-title {
+    font-size: 28px; /* Further reduce font size on very small screens */
+    padding: 15px;
+  }
+}
+
+
+
